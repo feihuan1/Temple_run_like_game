@@ -11,11 +11,18 @@ public class PlayerMovements : MonoBehaviour
     {
         rb.AddForce(0, 0, forwardForce * Time.deltaTime); 
         
-        if(Input.GetKey(KeyCode.D)) {
+        if(Input.GetKey(KeyCode.D)) 
+        {
             rb.AddForce(sidewayForce*Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
-        if(Input.GetKey(KeyCode.A)) {
+        if(Input.GetKey(KeyCode.A)) 
+        {
             rb.AddForce(-sidewayForce*Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+        } 
+
+        if(rb.position.y < -1) 
+        {
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 }
