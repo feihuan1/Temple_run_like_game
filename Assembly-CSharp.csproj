@@ -68,6 +68,9 @@
     <Compile Include="Assets/Scripts/PlayerMovements.cs" />
     <Compile Include="Assets/Scripts/GameManager.cs" />
     <Compile Include="Assets/Scripts/Score.cs" />
+    <Compile Include="Assets/Scripts/LevelComplete.cs" />
+    <Compile Include="Assets/Scripts/EndTriger.cs" />
+    <Compile Include="Assets/Credits.cs" />
     <Compile Include="Assets/Scripts/FollowPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
